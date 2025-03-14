@@ -1,18 +1,39 @@
 import React from "react";
-import "./App.css";
+import styles from "./App.module.css";
 import { Provider } from "./components/ui/provider";
-import { Button, Heading, Text } from "@chakra-ui/react";
+import Header from "./components/Header/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MemoryGame from "./pages/MemoryGame/MemoryGame";
+import Footer from "./components/Footer/Footer";
+import MainPage from "./pages/MainPage/MainPage";
+import { Container, LocaleProvider } from "@chakra-ui/react";
 
 function App() {
+  const { App, Main } = styles;
   return (
     <Provider>
-      <div className="App">
-        <Heading>Educational Games</Heading>
-        <Text>משחקים חינוכיים</Text>
-        <Button variant={"surface"} colorPalette={"yellow"}>
-          Button
-        </Button>
-      </div>
+      <LocaleProvider locale="he">
+        <BrowserRouter>
+          <div className={App}>
+            <Header />
+            <main className={Main}>
+              <Container
+                textAlign={"right"}
+                width={"100vw"}
+                height={"100vh"}
+                mt={2}
+                overflowY={"scroll"}
+              >
+                <Routes>
+                  <Route path="/" element={<MainPage />} />
+                  <Route path="/memory-game" element={<MemoryGame />} />
+                </Routes>
+              </Container>
+            </main>
+            <Footer />
+          </div>
+        </BrowserRouter>
+      </LocaleProvider>
     </Provider>
   );
 }
