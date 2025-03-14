@@ -19,9 +19,12 @@ function App() {
             <main className={Main}>
               <Container
                 textAlign={"right"}
-                width={"100vw"}
+                minW={"100%"}
                 height={"100vh"}
-                mt={2}
+                mt={2}                
+                pt={0}
+                px={0}
+                mx={0}
                 overflowY={"scroll"}
               >
                 <Routes>
