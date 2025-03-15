@@ -7,8 +7,9 @@ interface ImageCardProps {
     imgUrl: string;
     cardName: string;
     description: string;
+    isVisible: boolean;
   };
-  isVisible: boolean[];
+  isVisible: boolean;
   isShowCard: boolean[];
   showCard: (cardName: string, selectedCardId: number) => void;
 }
@@ -30,7 +31,7 @@ function ImageCard({
       m={5}
       boxShadow={"-5px -5px 6px rgba(0, 0, 0, 0.25)"}
       pos={"relative"}
-      visibility={isVisible[selectedCardId] ? "hidden" : "visible"}
+      visibility={item.isVisible ? "visible": "hidden"}
     >
       <Flex
         justifyContent={"center"}

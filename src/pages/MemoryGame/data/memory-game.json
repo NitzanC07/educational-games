@@ -3,48 +3,56 @@
     "id": 101,
     "cardName": "YellowLeaves",
     "imgUrl": "/images/memory-game/IMG20250304155217.jpg",
-    "description": "עלים צהובים (צילום)"
+    "description": "עלים צהובים (צילום)",
+    "isVisible": true
   },
   {
     "id": 102,
     "cardName": "YellowLeaves",
     "imgUrl": "/images/memory-game/IMG20250304155217.jpg",
-    "description": "עלים צהובים (AI)"
+    "description": "עלים צהובים (AI)",
+    "isVisible": true
   },
   {
     "id": 103,
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/IMG20250304155700.jpg",
-    "description": "שבלול על שיח ירוק (צילום)"
+    "description": "שבלול על שיח ירוק (צילום)",
+    "isVisible": true
   },
   {
     "id": 104,
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/IMG20250304155700.jpg",
-    "description": "שבלול על שיח ירוק (AI)"
+    "description": "שבלול על שיח ירוק (AI)",
+    "isVisible": true
   },
   {
     "id": 105,
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/IMG20250304161407.jpg",
-    "description": "עץ עירום ללא עלים (צילום)"
+    "description": "עץ עירום ללא עלים (צילום)",
+    "isVisible": true
   },
   {
     "id": 106,
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/IMG20250304161407.jpg",
-    "description": "עץ עירום ללא עלים (AI)"
+    "description": "עץ עירום ללא עלים (AI)",
+    "isVisible": true
   },
   {
     "id": 107,
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/IMG20250304161502.jpg",
-    "description": "קן בין ענפים (צילום)"
+    "description": "קן בין ענפים (צילום)",
+    "isVisible": true
   },
   {
     "id": 108,
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/IMG20250304161502.jpg",
-    "description": "קן בין ענפים (AI)"
+    "description": "קן בין ענפים (AI)",
+    "isVisible": true
   }
 ]

@@ -8,7 +8,7 @@ function MemoryGame() {
   const [isShowCard, setIsShowCard] = useState<boolean[]>(
     Array(cards.length).fill(false)
   );
-  const [isVisible, setIsVisible] = useState(Array(cards.length).fill(false));
+  const isVisible = true;
   const [firstCard, setFirstCard] = useState(-1);
   const [score, setScore] = useState(0);
   const [tries, setTries] = useState(0);
@@ -42,7 +42,6 @@ function MemoryGame() {
               setTries(tries + 1);
               setFirstCard(-1);
               setIsShowCard(Array(cards.length).fill(false));
-              console.log(isVisible);
               
             }, 2000);
             return !item;
@@ -59,11 +58,9 @@ function MemoryGame() {
       shuffledCards[firstCard].cardName === shuffledCards[secondCard].cardName
     ) {
       setScore(score + 1);
-      setIsVisible([
-        ...isVisible,
-        (isVisible[firstCard] = true),
-        (isVisible[secondCard] = true),
-      ]);
+      console.log(shuffledCards[firstCard].isVisible);
+      shuffledCards[firstCard].isVisible = false;
+      shuffledCards[secondCard].isVisible = false;
       // setOpenPopup(true);
     }
   };
