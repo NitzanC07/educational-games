@@ -42,6 +42,8 @@ function MemoryGame() {
               setTries(tries + 1);
               setFirstCard(-1);
               setIsShowCard(Array(cards.length).fill(false));
+              console.log(isVisible);
+              
             }, 2000);
             return !item;
           } else {

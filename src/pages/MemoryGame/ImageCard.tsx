@@ -1,4 +1,4 @@
-import { Card, CardBody, Flex, Image, Text } from "@chakra-ui/react";
+import { Card, Flex, Image, Text } from "@chakra-ui/react";
 
 interface ImageCardProps {
   selectedCardId: number;
