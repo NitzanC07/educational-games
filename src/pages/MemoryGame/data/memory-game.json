@@ -4,6 +4,7 @@
     "cardName": "GreenTree",
     "imgUrl": "/images/memory-game/green-tree-ai.jpeg",
     "description": "עץ ירוק עד (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -11,6 +12,7 @@
     "cardName": "GreenTree",
     "imgUrl": "/images/memory-game/green-tree-real.jpg",
     "description": "עץ ירוק עד (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   },
   {
@@ -18,6 +20,7 @@
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/leafless-tree-ai.jpeg",
     "description": "עץ נשיר ללא עלים (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -25,6 +28,7 @@
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/leafless-tree-real.jpg",
     "description": "עץ נשיר ללא עלים (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   },
   {
@@ -32,6 +36,7 @@
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/nest-on-tree-ai.jpeg",
     "description": "קן של גוזלים על עץ (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -39,6 +44,7 @@
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/nest-on-tree-real.jpg",
     "description": "קן של גוזלים על עץ (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   },
   {
@@ -46,6 +52,7 @@
     "cardName": "OliveTree",
     "imgUrl": "/images/memory-game/olive-tree-ai.jpeg",
     "description": "עץ זית (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -53,6 +60,7 @@
     "cardName": "OliveTree",
     "imgUrl": "/images/memory-game/olive-tree-real.jpg",
     "description": "עץ זית (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   },
   {
@@ -60,6 +68,7 @@
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/snail-on-leaves-ai.jpeg",
     "description": "חילזון על עלה (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -67,6 +76,7 @@
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/snail-on-leaves-real.jpg",
     "description": "חילזון על עלה (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   },
   {
@@ -74,6 +84,7 @@
     "cardName": "trunkOfTree",
     "imgUrl": "/images/memory-game/trunk-of-tree-ai.jpeg",
     "description": "גזע של עץ (AI)",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -81,6 +92,7 @@
     "cardName": "trunkOfTree",
     "imgUrl": "/images/memory-game/trunk-of-tree-real.jpg",
     "description": "גזע של עץ (צילום)",
+    "imageType": "צילום",
     "isVisible": true
   }
 ]

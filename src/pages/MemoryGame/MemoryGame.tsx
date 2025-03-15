@@ -2,6 +2,7 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import cards from "./data/memory-game.json";
 import ImageCard from "./ImageCard";
+import PopupImages from "./PopupImages/PopupImages";
 
 function MemoryGame() {
   const [shuffledCards, setShuffledCards] = useState(cards);
@@ -12,7 +13,7 @@ function MemoryGame() {
   const [firstCard, setFirstCard] = useState(-1);
   const [score, setScore] = useState(0);
   const [tries, setTries] = useState(0);
-  // const [openPopup, setOpenPopup] = useState(false);
+  const [openPopup, setOpenPopup] = useState(false);
 
   useEffect(() => {
     setShuffledCards(cards.sort(() => Math.random() - 0.5));
@@ -42,7 +43,6 @@ function MemoryGame() {
               setTries(tries + 1);
               setFirstCard(-1);
               setIsShowCard(Array(cards.length).fill(false));
-              
             }, 2000);
             return !item;
           } else {
@@ -58,17 +58,22 @@ function MemoryGame() {
       shuffledCards[firstCard].cardName === shuffledCards[secondCard].cardName
     ) {
       setScore(score + 1);
-      console.log(shuffledCards[firstCard].isVisible);
+      setOpenPopup(true);
       shuffledCards[firstCard].isVisible = false;
       shuffledCards[secondCard].isVisible = false;
-      // setOpenPopup(true);
     }
+  };
+
+  const continuePlay = () => {
+    setOpenPopup(false);
   };
 
   return (
     <section>
       <Heading>משחק זכרון בנושא עצים</Heading>
-      <Text>נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד: {score / tries}</Text>
+      <Text>
+        נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד: {tries === 0 ? 0 : Math.round((score / tries) * 100)}
+      </Text>
       <Flex flexWrap={"wrap"} justifyContent={"center"} alignItems={"center"}>
         {cards.map((card, index) => (
           <ImageCard
@@ -81,6 +86,16 @@ function MemoryGame() {
           />
         ))}
       </Flex>
+      {
+        openPopup && (
+          <PopupImages
+            continuePlay={continuePlay}
+            content={"כל הכבוד צמד קלפים תואמים!"}
+            buttonText={"להמשיך לשחק"}
+            // imageItems={[shuffledCards[firstCard]]}
+          />
+        )
+      }
     </section>
   );
 }

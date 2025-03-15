@@ -8,6 +8,7 @@ interface ImageCardProps {
     cardName: string;
     description: string;
     isVisible: boolean;
+    imageType: string;
   };
   isVisible: boolean;
   isShowCard: boolean[];
@@ -50,7 +51,7 @@ function ImageCard({
       />
       <Image src={item.imgUrl} alt={item.cardName} />
       <Text pos={"absolute"} bottom={0} left={0}>
-        צילום
+        {item.imageType}
       </Text>
     </Card.Root>
   );
