@@ -1,58 +1,86 @@
 [
   {
     "id": 101,
-    "cardName": "YellowLeaves",
-    "imgUrl": "/images/memory-game/IMG20250304155217.jpg",
-    "description": "עלים צהובים (צילום)",
+    "cardName": "GreenTree",
+    "imgUrl": "/images/memory-game/green-tree-ai.jpeg",
+    "description": "עץ ירוק עד (AI)",
     "isVisible": true
   },
   {
     "id": 102,
-    "cardName": "YellowLeaves",
-    "imgUrl": "/images/memory-game/IMG20250304155217.jpg",
-    "description": "עלים צהובים (AI)",
+    "cardName": "GreenTree",
+    "imgUrl": "/images/memory-game/green-tree-real.jpg",
+    "description": "עץ ירוק עד (צילום)",
     "isVisible": true
   },
   {
     "id": 103,
-    "cardName": "SnailOnLeaves",
-    "imgUrl": "/images/memory-game/IMG20250304155700.jpg",
-    "description": "שבלול על שיח ירוק (צילום)",
+    "cardName": "LeaflessTree",
+    "imgUrl": "/images/memory-game/leafless-tree-ai.jpeg",
+    "description": "עץ נשיר ללא עלים (AI)",
     "isVisible": true
   },
   {
     "id": 104,
-    "cardName": "SnailOnLeaves",
-    "imgUrl": "/images/memory-game/IMG20250304155700.jpg",
-    "description": "שבלול על שיח ירוק (AI)",
+    "cardName": "LeaflessTree",
+    "imgUrl": "/images/memory-game/leafless-tree-real.jpg",
+    "description": "עץ נשיר ללא עלים (צילום)",
     "isVisible": true
   },
   {
     "id": 105,
-    "cardName": "LeaflessTree",
-    "imgUrl": "/images/memory-game/IMG20250304161407.jpg",
-    "description": "עץ עירום ללא עלים (צילום)",
+    "cardName": "NestOnTree",
+    "imgUrl": "/images/memory-game/nest-on-tree-ai.jpeg",
+    "description": "קן של גוזלים על עץ (AI)",
     "isVisible": true
   },
   {
     "id": 106,
-    "cardName": "LeaflessTree",
-    "imgUrl": "/images/memory-game/IMG20250304161407.jpg",
-    "description": "עץ עירום ללא עלים (AI)",
+    "cardName": "NestOnTree",
+    "imgUrl": "/images/memory-game/nest-on-tree-real.jpg",
+    "description": "קן של גוזלים על עץ (צילום)",
     "isVisible": true
   },
   {
     "id": 107,
-    "cardName": "NestOnTree",
-    "imgUrl": "/images/memory-game/IMG20250304161502.jpg",
-    "description": "קן בין ענפים (צילום)",
+    "cardName": "OliveTree",
+    "imgUrl": "/images/memory-game/olive-tree-ai.jpeg",
+    "description": "עץ זית (AI)",
     "isVisible": true
   },
   {
     "id": 108,
-    "cardName": "NestOnTree",
-    "imgUrl": "/images/memory-game/IMG20250304161502.jpg",
-    "description": "קן בין ענפים (AI)",
+    "cardName": "OliveTree",
+    "imgUrl": "/images/memory-game/olive-tree-real.jpg",
+    "description": "עץ זית (צילום)",
+    "isVisible": true
+  },
+  {
+    "id": 109,
+    "cardName": "SnailOnLeaves",
+    "imgUrl": "/images/memory-game/snail-on-leaves-ai.jpeg",
+    "description": "חילזון על עלה (AI)",
+    "isVisible": true
+  },
+  {
+    "id": 110,
+    "cardName": "SnailOnLeaves",
+    "imgUrl": "/images/memory-game/snail-on-leaves-real.jpg",
+    "description": "חילזון על עלה (צילום)",
+    "isVisible": true
+  },
+  {
+    "id": 111,
+    "cardName": "trunkOfTree",
+    "imgUrl": "/images/memory-game/trunk-of-tree-ai.jpeg",
+    "description": "גזע של עץ (AI)",
+    "isVisible": true
+  },
+  {
+    "id": 112,
+    "cardName": "trunkOfTree",
+    "imgUrl": "/images/memory-game/trunk-of-tree-real.jpg",
+    "description": "גזע של עץ (צילום)",
     "isVisible": true
   }
 ]
