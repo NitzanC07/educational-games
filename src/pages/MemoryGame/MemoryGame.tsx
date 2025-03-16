@@ -14,6 +14,7 @@ function MemoryGame() {
   const [score, setScore] = useState(0);
   const [tries, setTries] = useState(0);
   const [openPopup, setOpenPopup] = useState(false);
+  const [bothCardsMatch, setBothCardsMatch] = useState<{ id: number; imgUrl: string; cardName: string; description: string; isVisible: boolean; imageType: string; }[]>([]);
 
   useEffect(() => {
     setShuffledCards(cards.sort(() => Math.random() - 0.5));
@@ -21,6 +22,7 @@ function MemoryGame() {
 
   const showCard = (cardName: string, selectedCardId: number) => {
     if (
+      // Prevent the user from selecting the same card twice.
       firstCard === selectedCardId ||
       isShowCard.filter((item) => item).length > 1
     )
@@ -28,7 +30,7 @@ function MemoryGame() {
     setIsShowCard((prev: boolean[]) => {
       return prev.map((item, i) => {
         if (firstCard === -1) {
-          // Selected the first card
+          // Selected the first card.
           if (i === selectedCardId) {
             setFirstCard(i);
             return !item;
@@ -55,9 +57,12 @@ function MemoryGame() {
 
   const checkIsMatch = (secondCard: number) => {
     if (
+      // Check if the cards match.
       shuffledCards[firstCard].cardName === shuffledCards[secondCard].cardName
     ) {
+      // If yes, there is a good match.
       setScore(score + 1);
+      setBothCardsMatch([shuffledCards[firstCard], shuffledCards[secondCard]]);
       setOpenPopup(true);
       shuffledCards[firstCard].isVisible = false;
       shuffledCards[secondCard].isVisible = false;
@@ -90,9 +95,9 @@ function MemoryGame() {
         openPopup && (
           <PopupImages
             continuePlay={continuePlay}
-            content={"כל הכבוד צמד קלפים תואמים!"}
+            content={"כל הכבוד מצאת צמד קלפים תואמים!"}
             buttonText={"להמשיך לשחק"}
-            // imageItems={[shuffledCards[firstCard]]}
+            imageItems={bothCardsMatch}
           />
         )
       }

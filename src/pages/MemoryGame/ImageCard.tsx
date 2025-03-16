@@ -18,7 +18,6 @@ interface ImageCardProps {
 function ImageCard({
   selectedCardId,
   item,
-  isVisible,
   isShowCard,
   showCard,
 }: ImageCardProps) {
@@ -28,11 +27,11 @@ function ImageCard({
       width={["100px", "150px", "200px", "250px"]}
       overflow={"hidden"}
       cursor={"pointer"}
-      border={"4px solid #244F98"}
+      border={"4px solid #176B87"}
       m={5}
       boxShadow={"-5px -5px 6px rgba(0, 0, 0, 0.25)"}
       pos={"relative"}
-      visibility={item.isVisible ? "visible": "hidden"}
+      visibility={item.isVisible ? "visible" : "hidden"}
     >
       <Flex
         justifyContent={"center"}
@@ -42,15 +41,15 @@ function ImageCard({
         left={0}
         bottom={0}
         right={0}
-        bgColor={"#133E87"}
+        bgColor={"#176B87"}
         zIndex={1}
-        opacity={isShowCard[selectedCardId] ? 0 : 1}
         onClick={() => showCard(item.cardName, selectedCardId)}
+        opacity={isShowCard[selectedCardId] ? 0 : 1}
         transition={"all 0.5s ease-in-out"}
-        color={"#244F98"}
+        color={"#EEF5FF"}
       />
       <Image src={item.imgUrl} alt={item.cardName} />
-      <Text pos={"absolute"} bottom={0} left={0}>
+      <Text pos={"absolute"} bottom={0} left={0} color={"#EEF5FF"}>
         {item.imageType}
       </Text>
     </Card.Root>

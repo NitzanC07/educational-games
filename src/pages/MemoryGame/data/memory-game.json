@@ -3,7 +3,7 @@
     "id": 101,
     "cardName": "GreenTree",
     "imgUrl": "/images/memory-game/green-tree-ai.jpeg",
-    "description": "עץ ירוק עד (AI)",
+    "description": "הנחייה (פרומפט): עץ גבוה עם עלים ירוקים, צורת עלווה עגולה. נער עומד לפני העץ ומביט למצלמה. העץ נמצא ליד שביל בפארק ציבורי עם דשא רחב, ספסלים, ומתקני שעשועים בנוף. תמונה בסגנון תמונת נוף ממצלמת פילם. (AI)",
     "imageType": "AI",
     "isVisible": true
   },
@@ -11,7 +11,7 @@
     "id": 102,
     "cardName": "GreenTree",
     "imgUrl": "/images/memory-game/green-tree-real.jpg",
-    "description": "עץ ירוק עד (צילום)",
+    "description": "עץ ירוק עד בפארק בראשון לציון (צילום).",
     "imageType": "צילום",
     "isVisible": true
   },
@@ -19,7 +19,7 @@
     "id": 103,
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/leafless-tree-ai.jpeg",
-    "description": "עץ נשיר ללא עלים (AI)",
+    "description": "הנחייה (פרומפט): עץ בחצר ארמון בחורף בלי עלים, רק ענפים, זווית הצילום של העץ היא מכיוון למטה, צילום בסגנון תמונה מהמאה ה-18. (AI)",
     "imageType": "AI",
     "isVisible": true
   },
@@ -27,7 +27,7 @@
     "id": 104,
     "cardName": "LeaflessTree",
     "imgUrl": "/images/memory-game/leafless-tree-real.jpg",
-    "description": "עץ נשיר ללא עלים (צילום)",
+    "description": "עץ נשיר ללא עלים בפארק בראשון לציון (צילום).",
     "imageType": "צילום",
     "isVisible": true
   },
@@ -35,7 +35,7 @@
     "id": 105,
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/nest-on-tree-ai.jpeg",
-    "description": "קן של גוזלים על עץ (AI)",
+    "description": "הנחייה (פרומפט): תמונת תקריב של קן, שבתוכו יש שני גוזלים, על הסתעפות של גזע עץ שמתפצל לשתי הסתעפויות. ברקע של התמונה רואים דשא רחב ידיים ושמיים עם קצת עננים. תמונה בסגנון מינימליסטי ריאליסטי כמו מתוך ספר טבע. (AI)",
     "imageType": "AI",
     "isVisible": true
   },
@@ -43,7 +43,7 @@
     "id": 106,
     "cardName": "NestOnTree",
     "imgUrl": "/images/memory-game/nest-on-tree-real.jpg",
-    "description": "קן של גוזלים על עץ (צילום)",
+    "description": "קן של גוזלים ריק על עץ נשיר ללא עלים (צילום).",
     "imageType": "צילום",
     "isVisible": true
   },
@@ -51,7 +51,7 @@
     "id": 107,
     "cardName": "OliveTree",
     "imgUrl": "/images/memory-game/olive-tree-ai.jpeg",
-    "description": "עץ זית (AI)",
+    "description": "הנחייה (פרומפט): עץ זית עם עלים מנצנצים באור שמש של שעת בוקר, צילום מכיוון מזרח. (AI)",
     "imageType": "AI",
     "isVisible": true
   },
@@ -59,7 +59,7 @@
     "id": 108,
     "cardName": "OliveTree",
     "imgUrl": "/images/memory-game/olive-tree-real.jpg",
-    "description": "עץ זית (צילום)",
+    "description": "עץ זית בפארק בראשון לציון (צילום)",
     "imageType": "צילום",
     "isVisible": true
   },
@@ -67,7 +67,7 @@
     "id": 109,
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/snail-on-leaves-ai.jpeg",
-    "description": "חילזון על עלה (AI)",
+    "description": "הנחייה (פרומפט): שבלול לבן עם פסים חומים נח על עלה ירוק, מסביבו יש הרבה עלים ירוקים של אותו ענף של השיח הירוק, ברקע יש שמיים כחולים מעל. התמונה בסגנון צילום מיקרו ממוקד בשבלול מקרוב (AI).",
     "imageType": "AI",
     "isVisible": true
   },
@@ -75,7 +75,7 @@
     "id": 110,
     "cardName": "SnailOnLeaves",
     "imgUrl": "/images/memory-game/snail-on-leaves-real.jpg",
-    "description": "חילזון על עלה (צילום)",
+    "description": "חילזון על עלה ירוק בתחילת עונת האביב (צילום).",
     "imageType": "צילום",
     "isVisible": true
   },
@@ -83,7 +83,7 @@
     "id": 111,
     "cardName": "trunkOfTree",
     "imgUrl": "/images/memory-game/trunk-of-tree-ai.jpeg",
-    "description": "גזע של עץ (AI)",
+    "description": "הנחייה (פרומפט): גזע רחב של עץ מחובר לאדמה, דשא ירוק מסביב. צילום מציאותי בסגנון מצלמת פילם, תמונת מיקרו מקרוב, התמונה מראה חלק תחתון של העץ (AI).",
     "imageType": "AI",
     "isVisible": true
   },
@@ -91,7 +91,7 @@
     "id": 112,
     "cardName": "trunkOfTree",
     "imgUrl": "/images/memory-game/trunk-of-tree-real.jpg",
-    "description": "גזע של עץ (צילום)",
+    "description": "גזע רחב של עץ מחובר לאדמה עם שורשיו (צילום).",
     "imageType": "צילום",
     "isVisible": true
   }

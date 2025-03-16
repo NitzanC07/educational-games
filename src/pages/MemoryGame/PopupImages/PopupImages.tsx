@@ -1,17 +1,19 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 interface PopupImagesProps {
   continuePlay: () => void;
   content: string;
   buttonText: string;
-  imageItems?: {
-    id: number;
-    imgUrl: string;
-    cardName: string;
-    description: string;
-    isVisible: boolean;
-    imageType: string;
-  }[];
+  imageItems?:
+    | {
+        id: number;
+        imgUrl: string;
+        cardName: string;
+        description: string;
+        isVisible: boolean;
+        imageType: string;
+      }[]
+    | undefined[];
 }
 function PopupImages({
   continuePlay,
@@ -19,8 +21,6 @@ function PopupImages({
   buttonText,
   imageItems,
 }: PopupImagesProps) {
-  console.log(imageItems);
-
   return (
     <Flex
       pos={"fixed"}
@@ -39,23 +39,33 @@ function PopupImages({
         flexDirection={"column"}
         width={450}
         bgColor={"#fff"}
-        border={"4px solid #244F98"}
+        border={"4px solid #86B6F6"}
         borderRadius={10}
         justifyContent={"center"}
         p={5}
       >
-        <Text mb={5}>{content}</Text>
-        {/* <Flex justifyContent={"space-between"} mb={5}>
-          <Box>
-            <Text>{imageItems[0].description}</Text>
-            <Image src={imageItems[0].imgUrl} alt={imageItems[0].cardName} width={180} />
-          </Box>
-          <Box>
-            <Text>חילזון ב-AI</Text>
-            <Image src={"/images/memory-game/snail-on-leaves-ai.jpeg"} alt="image" width={180} />
-          </Box>
-        </Flex> */}
-        <Button onClick={continuePlay} colorScheme="blue">
+        <Heading mb={5} color={"#176B87"}>
+          {content}
+        </Heading>
+        <Flex justifyContent={"space-between"} mb={5}>
+          {imageItems &&
+            imageItems.map((item, i) => (
+              <Box key={i}>
+                <Image
+                  key={item?.id}
+                  src={item?.imgUrl}
+                  alt={item?.cardName}
+                  width={180}
+                  mb={5}
+                  border={"4px solid #86B6F6"}
+                  borderRadius={7}
+                  boxShadow={"3px 3px 5px rgba(0, 0, 0, 0.25)"}
+                />
+                <Text width={180}>{item?.description}</Text>
+              </Box>
+            ))}
+        </Flex>
+        <Button onClick={continuePlay} bgColor={"#86B6F6"}>
           {buttonText}
         </Button>
       </Flex>
