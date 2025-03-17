@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import cards from "./data/memory-game.json";
 import ImageCard from "./ImageCard";
 import PopupImages from "./PopupImages/PopupImages";
+import PopupSuccess from "./PopupSuccess/PopupSuccess";
 
 function MemoryGame() {
   const [shuffledCards, setShuffledCards] = useState(cards);
@@ -13,12 +14,22 @@ function MemoryGame() {
   const [firstCard, setFirstCard] = useState(-1);
   const [score, setScore] = useState(0);
   const [tries, setTries] = useState(0);
-  const [openPopup, setOpenPopup] = useState(false);
-  const [bothCardsMatch, setBothCardsMatch] = useState<{ id: number; imgUrl: string; cardName: string; description: string; isVisible: boolean; imageType: string; }[]>([]);
+  const [openMatchPopup, setOpenMatchPopup] = useState(false);
+  const [isGameOver, setIsGameOver] = useState(false);
+  const [bothCardsMatch, setBothCardsMatch] = useState<
+    {
+      id: number;
+      imgUrl: string;
+      cardName: string;
+      description: string;
+      isVisible: boolean;
+      imageType: string;
+    }[]
+  >([]);
 
   useEffect(() => {
     setShuffledCards(cards.sort(() => Math.random() - 0.5));
-  }, []);
+  }, [isGameOver]);
 
   const showCard = (cardName: string, selectedCardId: number) => {
     if (
@@ -63,21 +74,37 @@ function MemoryGame() {
       // If yes, there is a good match.
       setScore(score + 1);
       setBothCardsMatch([shuffledCards[firstCard], shuffledCards[secondCard]]);
-      setOpenPopup(true);
+      setOpenMatchPopup(true);
       shuffledCards[firstCard].isVisible = false;
       shuffledCards[secondCard].isVisible = false;
     }
   };
 
   const continuePlay = () => {
-    setOpenPopup(false);
+    setTimeout(() => {
+      if (score === shuffledCards.length / 2) {
+        setIsGameOver(true);
+      }
+    }, 500);
+    setOpenMatchPopup(false);
+  };
+
+  const restartGame = () => {
+    setIsShowCard(Array(cards.length).fill(false));
+    setScore(0);
+    setTries(0);
+    setFirstCard(-1);
+    setBothCardsMatch([]);
+    shuffledCards.map((card) => (card.isVisible = true));
+    setIsGameOver(false);
   };
 
   return (
     <section>
       <Heading>משחק זכרון בנושא עצים</Heading>
       <Text>
-        נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד: {tries === 0 ? 0 : Math.round((score / tries) * 100)}
+        נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד:{" "}
+        {tries === 0 ? 0 : Math.round((score / tries) * 100)}
       </Text>
       <Flex flexWrap={"wrap"} justifyContent={"center"} alignItems={"center"}>
         {cards.map((card, index) => (
@@ -91,16 +118,22 @@ function MemoryGame() {
           />
         ))}
       </Flex>
-      {
-        openPopup && (
-          <PopupImages
-            continuePlay={continuePlay}
-            content={"כל הכבוד מצאת צמד קלפים תואמים!"}
-            buttonText={"להמשיך לשחק"}
-            imageItems={bothCardsMatch}
-          />
-        )
-      }
+      {openMatchPopup && (
+        <PopupImages
+          continuePlay={continuePlay}
+          content={"כל הכבוד מצאת צמד קלפים תואמים!"}
+          buttonText={"להמשיך לשחק"}
+          imageItems={bothCardsMatch}
+        />
+      )}
+      {isGameOver && (
+        <PopupSuccess
+          restartGame={restartGame}
+          content="כל הכבוד! מצאת את כל הצמדים."
+          score={score}
+          tries={tries}
+        />
+      )}
     </section>
   );
 }
