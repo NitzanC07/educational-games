@@ -10,22 +10,22 @@ function Header() {
       <Flex gap={10}>
         <Heading
           fontSize={"3xl"}
-          color={"green.600"}
-          _hover={{ color: "green.400" }}
+          color={"#B4D4FFcc"}
+          _hover={{ color: "#B4D4FFff" }}
           transition={"all 0.7s ease-in-out"}
         >
-          <Link to={"/"}>משחקים חינוכיים</Link>
+          <Link to={"/"}>חושבים ונהנים</Link>
         </Heading>
 
         <Menu.Root>
           <Menu.Trigger asChild>
-            <ChakraLink>
+            <ChakraLink color={"#EEF5FF"}>
               משחקים
             </ChakraLink>
           </Menu.Trigger>
           <Portal>
             <Menu.Positioner>
-              <Menu.Content dir="rtl">
+              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"}>
                 <Menu.Item value="memory-game">
                   <Link to="/memory-game">משחק זכרון</Link>
                 </Menu.Item>
@@ -34,7 +34,7 @@ function Header() {
           </Portal>
         </Menu.Root>
       </Flex>
-      <Text>ניצן כהן</Text>
+      <Text color={"#B4D4FF"}>ניצן כהן</Text>
     </header>
   );
 }

@@ -1,12 +1,14 @@
-import { Text } from "@chakra-ui/react"
-import styles from "./Footer.module.css"
+import { Text } from "@chakra-ui/react";
+import styles from "./Footer.module.css";
 function Footer() {
-    const {footer} = styles;
+  const { footer } = styles;
   return (
     <footer className={footer}>
-        <Text>ניצן כהן</Text>
+      <Text fontSize={"smaller"} color={"#B4D4FF"}>
+        פיתוח האתר ע"י ניצן כהן
+      </Text>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
