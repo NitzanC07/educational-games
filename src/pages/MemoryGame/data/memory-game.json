@@ -2,6 +2,7 @@
   {
     "id": 101,
     "cardName": "GreenTree",
+    "cardIdMatch": 102,
     "imgUrl": "/images/memory-game/green-tree-ai.jpeg",
     "description": "הנחייה (פרומפט): עץ גבוה עם עלים ירוקים, צורת עלווה עגולה. נער עומד לפני העץ ומביט למצלמה. העץ נמצא ליד שביל בפארק ציבורי עם דשא רחב, ספסלים, ומתקני שעשועים בנוף. תמונה בסגנון תמונת נוף ממצלמת פילם. (AI)",
     "imageType": "AI",
@@ -10,6 +11,7 @@
   {
     "id": 102,
     "cardName": "GreenTree",
+    "cardIdMatch": 101,
     "imgUrl": "/images/memory-game/green-tree-real.jpg",
     "description": "עץ ירוק עד בפארק בראשון לציון (צילום).",
     "imageType": "צילום",
@@ -18,6 +20,7 @@
   {
     "id": 103,
     "cardName": "LeaflessTree",
+    "cardIdMatch": 104,
     "imgUrl": "/images/memory-game/leafless-tree-ai.jpeg",
     "description": "הנחייה (פרומפט): עץ בחצר ארמון בחורף בלי עלים, רק ענפים, זווית הצילום של העץ היא מכיוון למטה, צילום בסגנון תמונה מהמאה ה-18. (AI)",
     "imageType": "AI",
@@ -26,6 +29,7 @@
   {
     "id": 104,
     "cardName": "LeaflessTree",
+    "cardIdMatch": 103,
     "imgUrl": "/images/memory-game/leafless-tree-real.jpg",
     "description": "עץ נשיר ללא עלים בפארק בראשון לציון (צילום).",
     "imageType": "צילום",
@@ -34,6 +38,7 @@
   {
     "id": 105,
     "cardName": "NestOnTree",
+    "cardIdMatch": 106,
     "imgUrl": "/images/memory-game/nest-on-tree-ai.jpeg",
     "description": "הנחייה (פרומפט): תמונת תקריב של קן, שבתוכו יש שני גוזלים, על הסתעפות של גזע עץ שמתפצל לשתי הסתעפויות. ברקע של התמונה רואים דשא רחב ידיים ושמיים עם קצת עננים. תמונה בסגנון מינימליסטי ריאליסטי כמו מתוך ספר טבע. (AI)",
     "imageType": "AI",
@@ -42,6 +47,7 @@
   {
     "id": 106,
     "cardName": "NestOnTree",
+    "cardIdMatch": 105,
     "imgUrl": "/images/memory-game/nest-on-tree-real.jpg",
     "description": "קן של גוזלים ריק על עץ נשיר ללא עלים (צילום).",
     "imageType": "צילום",
@@ -50,6 +56,7 @@
   {
     "id": 107,
     "cardName": "OliveTree",
+    "cardIdMatch": 108,
     "imgUrl": "/images/memory-game/olive-tree-ai.jpeg",
     "description": "הנחייה (פרומפט): עץ זית עם עלים מנצנצים באור שמש של שעת בוקר, צילום מכיוון מזרח. (AI)",
     "imageType": "AI",
@@ -58,6 +65,7 @@
   {
     "id": 108,
     "cardName": "OliveTree",
+    "cardIdMatch": 107,
     "imgUrl": "/images/memory-game/olive-tree-real.jpg",
     "description": "עץ זית בפארק בראשון לציון (צילום)",
     "imageType": "צילום",
@@ -66,6 +74,7 @@
   {
     "id": 109,
     "cardName": "SnailOnLeaves",
+    "cardIdMatch": 110,
     "imgUrl": "/images/memory-game/snail-on-leaves-ai.jpeg",
     "description": "הנחייה (פרומפט): שבלול לבן עם פסים חומים נח על עלה ירוק, מסביבו יש הרבה עלים ירוקים של אותו ענף של השיח הירוק, ברקע יש שמיים כחולים מעל. התמונה בסגנון צילום מיקרו ממוקד בשבלול מקרוב (AI).",
     "imageType": "AI",
@@ -74,6 +83,7 @@
   {
     "id": 110,
     "cardName": "SnailOnLeaves",
+    "cardIdMatch": 109,
     "imgUrl": "/images/memory-game/snail-on-leaves-real.jpg",
     "description": "חילזון על עלה ירוק בתחילת עונת האביב (צילום).",
     "imageType": "צילום",
@@ -82,6 +92,7 @@
   {
     "id": 111,
     "cardName": "trunkOfTree",
+    "cardIdMatch": 112,
     "imgUrl": "/images/memory-game/trunk-of-tree-ai.jpeg",
     "description": "הנחייה (פרומפט): גזע רחב של עץ מחובר לאדמה, דשא ירוק מסביב. צילום מציאותי בסגנון מצלמת פילם, תמונת מיקרו מקרוב, התמונה מראה חלק תחתון של העץ (AI).",
     "imageType": "AI",
@@ -90,8 +101,45 @@
   {
     "id": 112,
     "cardName": "trunkOfTree",
+    "cardIdMatch": 111,
     "imgUrl": "/images/memory-game/trunk-of-tree-real.jpg",
     "description": "גזע רחב של עץ מחובר לאדמה עם שורשיו (צילום).",
+    "imageType": "צילום",
+    "isVisible": true
+  },
+  {
+    "id": 113,
+    "cardName": "yellowLeaves",
+    "cardIdMatch": 114,
+    "imgUrl": "/images/memory-game/yellow-leaves-ai.jpeg",
+    "description": "הנחייה (פרומפט): עלים צהובים בצורת נוצה, בסתיו לפני השלכת, על ענפים דקיקים שממלאים את כל התמונה, בסגנון צילום נוף פסטורלי בצבעי פסטל. (AI).",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 114,
+    "cardName": "yellowLeaves",
+    "cardIdMatch": 113,
+    "imgUrl": "/images/memory-game/yellow-leaves-real.jpg",
+    "description": "עלים צהובים על עץ לפני שלכת (צילום).",
+    "imageType": "צילום",
+    "isVisible": true
+  },
+  {
+    "id": 115,
+    "cardName": "oliveBranch",
+    "cardIdMatch": 116,
+    "imgUrl": "/images/memory-game/olive-branch-ai.jpeg",
+    "description": "הנחייה (פרומפט): ענף יחיד של עץ זית במוקד התמונה עם סבך של ענפים ברקע התמונה. תמונה ריאליסטית בסגנון צילום מיקרו צבעוני באור יום. (AI).",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 116,
+    "cardName": "oliveBranch",
+    "cardIdMatch": 115,
+    "imgUrl": "/images/memory-game/olive-branch-real.jpg",
+    "description": "ענף של עץ זית על עץ בראשון לציון (צילום).",
     "imageType": "צילום",
     "isVisible": true
   }

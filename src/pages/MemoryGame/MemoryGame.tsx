@@ -21,6 +21,7 @@ function MemoryGame() {
       id: number;
       imgUrl: string;
       cardName: string;
+      cardIdMatch: number;
       description: string;
       isVisible: boolean;
       imageType: string;
@@ -28,8 +29,31 @@ function MemoryGame() {
   >([]);
 
   useEffect(() => {
-    setShuffledCards(cards.sort(() => Math.random() - 0.5));
+    setShuffledCards(selectSixCouples());
   }, [isGameOver]);
+
+  const selectSixCouples = () => {
+    const couples = [];
+    const allCards = [...cards];
+
+    // Loop until we have 6 couples
+    while (couples.length < 12) {
+      const randomIndex1 = Math.floor(Math.random() * allCards.length);
+      const card1 = allCards[randomIndex1];
+      const card2 = allCards.find((card) => card.id === card1.cardIdMatch);
+
+      if (card2) {
+        couples.push(card1, card2);
+        allCards.splice(randomIndex1, 1);
+        allCards.splice(allCards.indexOf(card2), 1);
+      }
+    }
+
+    // Shuffle the selected cards
+    const shuffledCouples = [...couples].sort(() => Math.random() - 0.5);
+
+    return shuffledCouples;
+  };
 
   const showCard = (cardName: string, selectedCardId: number) => {
     if (
@@ -56,7 +80,7 @@ function MemoryGame() {
               setTries(tries + 1);
               setFirstCard(-1);
               setIsShowCard(Array(cards.length).fill(false));
-            }, 2000);
+            }, 1200);
             return !item;
           } else {
             return item;
@@ -95,7 +119,7 @@ function MemoryGame() {
     setTries(0);
     setFirstCard(-1);
     setBothCardsMatch([]);
-    shuffledCards.map((card) => (card.isVisible = true));
+    cards.map((card) => (card.isVisible = true));
     setIsGameOver(false);
   };
 
@@ -106,8 +130,16 @@ function MemoryGame() {
         נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד:{" "}
         {tries === 0 ? 0 : Math.round((score / tries) * 100)}
       </Text>
-      <Flex flexWrap={"wrap"} justifyContent={"center"} alignItems={"center"}>
-        {cards.map((card, index) => (
+      <Flex
+        flexWrap={"wrap"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        width={["100%"]}
+        maxW={"1024px"}
+        mx={"auto"}
+        borderRadius={10}
+      >
+        {shuffledCards.map((card, index) => (
           <ImageCard
             key={index}
             selectedCardId={index}
