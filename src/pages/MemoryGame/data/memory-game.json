@@ -142,5 +142,59 @@
     "description": "ענף של עץ זית על עץ בראשון לציון (צילום).",
     "imageType": "צילום",
     "isVisible": true
+  },
+  {
+    "id": 117,
+    "cardName": "figLeaf",
+    "cardIdMatch": 118,
+    "imgUrl": "/images/memory-game/fig-leaf-ai.jpeg",
+    "description": "הנחייה (פרומפט): עלה תאנה ירוק בהיר צעיר עם חמש אונות כמו כף יד, ברקע התמונה רואים סבך של ענפים של אותו עץ תאנה בתחילת לבלוב האביב ושמיים בצבע תכלת, תמונה מרובעת בסגנון ציור מיקרו ריאליסטי. (AI).",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 118,
+    "cardName": "figLeaf",
+    "cardIdMatch": 117,
+    "imgUrl": "/images/memory-game/fig-leaf-real.jpg",
+    "description": "עלה של עץ תאנה בתחילת לבלוב האביב בגבעת התיתורה במודיעין (צילום).",
+    "imageType": "צילום",
+    "isVisible": true
+  },
+  {
+    "id": 119,
+    "cardName": "plumeriaRubraLeaves",
+    "cardIdMatch": 120,
+    "imgUrl": "/images/memory-game/plumeria-rubra-leaves-ai.jpg",
+    "description": "הנחייה (פרומפט): ,תמונת מיקרו תקריב של שני עלים גדולים, ירקרקים בהירים וארוכים, של עץ פלומריה ריחנית, עם שפה תמימה ומחודדת בקצה ופונה כלפי מעלה עם צורת עלה פשוטה, על ענף של עץ שבולט מעל סבך של צמחייה ארץ ישראלית ברקע. (AI).",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 120,
+    "cardName": "plumeriaRubraLeaves",
+    "cardIdMatch": 119,
+    "imgUrl": "/images/memory-game/plumeria-rubra-leaves-real.jpg",
+    "description": "עלים של עץ פלומריה ריחנית (פיטנה), עץ נוי ממשפחת ההרדופיים. (צילום).",
+    "imageType": "צילום",
+    "isVisible": true
+  },
+  {
+    "id": 121,
+    "cardName": "rootsTree",
+    "cardIdMatch": 122,
+    "imgUrl": "/images/memory-game/roots-tree-ai.jpeg",
+    "description": "הנחייה (פרומפט): שורשיו של עץ חשופים מעל פני האדמה. רואים רק את תחתית גזע העץ, ברקע של התמונה יש פארק עם שביל הליכה, דשא, עשב. תמונה בסגנון צילום ישן מהמאה ה-16. (AI).",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 122,
+    "cardName": "rootsTree",
+    "cardIdMatch": 121,
+    "imgUrl": "/images/memory-game/roots-tree-real.jpg",
+    "description": "שורשים של עץ בולטים מעל פני הקרקע (צילום).",
+    "imageType": "צילום",
+    "isVisible": true
   }
 ]

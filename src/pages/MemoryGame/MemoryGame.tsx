@@ -1,7 +1,7 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import cards from "./data/memory-game.json";
-import ImageCard from "./ImageCard";
+import ImageCard from "./ImageCard/ImageCard";
 import PopupImages from "./PopupImages/PopupImages";
 import PopupSuccess from "./PopupSuccess/PopupSuccess";
 
