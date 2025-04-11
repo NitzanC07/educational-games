@@ -5,6 +5,7 @@ interface PopupSuccessProps {
   content: string;
   score: number;
   tries: number;
+  seconds: number;
 }
 
 function PopupSuccess({
@@ -12,6 +13,7 @@ function PopupSuccess({
   content,
   score,
   tries,
+  seconds,
 }: PopupSuccessProps) {
   return (
     <Flex
@@ -40,7 +42,9 @@ function PopupSuccess({
           סיכום המשחק
         </Heading>
         <Text mb={5} color={"#176B87"}>
-          עשית {tries} ניסיונות.
+          עשית {tries} ניסיונות, בתוך{" "}
+          {`${Math.floor(seconds / 60)}`.padStart(2, "0")}:
+          {`${seconds % 60}`.padStart(2, "0")} דקות.
         </Text>
         <Text mb={5} color={"#176B87"}>
           פספסת {tries - score} פעמים צמדים לא תואמים.

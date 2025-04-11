@@ -14,6 +14,8 @@ function MemoryGame() {
   const [firstCard, setFirstCard] = useState(-1);
   const [score, setScore] = useState(0);
   const [tries, setTries] = useState(0);
+  const [seconds, setSeconds] = useState(0);
+  const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [openMatchPopup, setOpenMatchPopup] = useState(false);
   const [isGameOver, setIsGameOver] = useState(false);
   const [bothCardsMatch, setBothCardsMatch] = useState<
@@ -27,6 +29,15 @@ function MemoryGame() {
       imageType: string;
     }[]
   >([]);
+
+  useEffect(() => {
+    if (isTimerRunning) {
+      const interval = setInterval(() => {
+        setSeconds((prevSeconds) => prevSeconds + 1);
+      }, 1000);
+      return () => clearInterval(interval);
+    }
+  }, [isTimerRunning]);
 
   useEffect(() => {
     setShuffledCards(selectSixCouples());
@@ -56,6 +67,7 @@ function MemoryGame() {
   };
 
   const showCard = (cardName: string, selectedCardId: number) => {
+    if (tries === 0) setIsTimerRunning(true);
     if (
       // Prevent the user from selecting the same card twice.
       firstCard === selectedCardId ||
@@ -107,9 +119,10 @@ function MemoryGame() {
   const continuePlay = () => {
     setTimeout(() => {
       if (score === shuffledCards.length / 2) {
+        setIsTimerRunning(false);
         setIsGameOver(true);
       }
-    }, 500);
+    }, 300);
     setOpenMatchPopup(false);
   };
 
@@ -117,6 +130,7 @@ function MemoryGame() {
     setIsShowCard(Array(cards.length).fill(false));
     setScore(0);
     setTries(0);
+    setSeconds(0);
     setFirstCard(-1);
     setBothCardsMatch([]);
     cards.map((card) => (card.isVisible = true));
@@ -128,7 +142,9 @@ function MemoryGame() {
       <Heading>משחק זכרון בנושא עצים</Heading>
       <Text>
         נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד:{" "}
-        {tries === 0 ? 0 : Math.round((score / tries) * 100)}
+        {tries === 0 ? 0 : Math.round((score / tries) * 100)} | זמן:{" "}
+        {`${Math.floor(seconds / 60)}`.padStart(2, "0")}:
+        {`${seconds % 60}`.padStart(2, "0")}
       </Text>
       <Flex
         flexWrap={"wrap"}
@@ -164,6 +180,7 @@ function MemoryGame() {
           content="כל הכבוד! מצאת את כל הצמדים."
           score={score}
           tries={tries}
+          seconds={seconds}
         />
       )}
     </section>
