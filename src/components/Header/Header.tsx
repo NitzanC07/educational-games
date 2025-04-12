@@ -19,14 +19,14 @@ function Header() {
 
         <Menu.Root>
           <Menu.Trigger asChild>
-            <ChakraLink color={"#EEF5FF"}>
+            <ChakraLink color={"#EEF5FF"} _hover={{ color: "#B4D4FF" }}>
               משחקים
             </ChakraLink>
           </Menu.Trigger>
           <Portal>
             <Menu.Positioner>
-              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"}>
-                <Menu.Item value="memory-game">
+              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"} width={200}>
+                <Menu.Item value="memory-game" fontSize={"2xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
                   <Link to="/memory-game">משחק זכרון</Link>
                 </Menu.Item>
               </Menu.Content>
