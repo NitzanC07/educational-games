@@ -15,6 +15,11 @@ function PopupSuccess({
   tries,
   seconds,
 }: PopupSuccessProps) {
+  const result = () => {
+    const finalScore = Math.round((score / tries) * 100 - seconds * 0.067);
+    return finalScore < 0 ? 0 : finalScore;
+  };
+
   return (
     <Flex
       pos={"fixed"}
@@ -53,7 +58,7 @@ function PopupSuccess({
           הצלחת למצוא {score} התאמות.
         </Text>
         <Text mb={5} color={"#176B87"}>
-          הניקוד הכולל שלך הוא {Math.round((score / tries) * 100)}.
+          הניקוד הכולל שלך הוא {result()}.
         </Text>
         <Text mb={5} fontSize={"2xl"} textAlign={"center"} color={"#176B87"}>
           כל הכבוד!

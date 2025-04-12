@@ -141,8 +141,7 @@ function MemoryGame() {
     <section>
       <Heading>משחק זכרון בנושא עצים</Heading>
       <Text>
-        נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | ניקוד:{" "}
-        {tries === 0 ? 0 : Math.round((score / tries) * 100)} | זמן:{" "}
+        נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | זמן:{" "}
         {`${Math.floor(seconds / 60)}`.padStart(2, "0")}:
         {`${seconds % 60}`.padStart(2, "0")}
       </Text>
