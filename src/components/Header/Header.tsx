@@ -26,7 +26,7 @@ function Header() {
           <Portal>
             <Menu.Positioner>
               <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"} width={200}>
-                <Menu.Item value="memory-game" fontSize={"2xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
+                <Menu.Item value="memory-game" fontSize={"3xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
                   <Link to="/memory-game">משחק זכרון</Link>
                 </Menu.Item>
               </Menu.Content>
