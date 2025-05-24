@@ -1,4 +1,5 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import closeIcon from "./close-icon.svg";
 
 interface PopupSuccessProps {
   restartGame: () => void;
@@ -42,6 +43,7 @@ function PopupSuccess({
         borderRadius={10}
         justifyContent={"center"}
         p={5}
+        pos={"relative"}
       >
         <Heading mb={5} color={"#176B87"}>
           סיכום המשחק
@@ -64,8 +66,16 @@ function PopupSuccess({
           כל הכבוד!
         </Text>
 
-        <Button onClick={restartGame} bgColor={"#86B6F6"}>
-          שחק שוב
+        <Button
+          onClick={restartGame}
+          m={0}
+          p={0}
+          bgColor={"#fff"}
+          pos={"absolute"}
+          top={2}
+          left={2}
+        >
+          <img src={closeIcon} alt="close-icon" />
         </Button>
       </Flex>
     </Flex>
