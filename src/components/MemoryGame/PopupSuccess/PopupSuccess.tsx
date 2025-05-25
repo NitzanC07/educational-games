@@ -1,5 +1,5 @@
 import { Button, Flex, Heading, Text } from "@chakra-ui/react";
-import closeIcon from "./close-icon.svg";
+import closeIcon from "../../../assets/close-icon.svg";
 
 interface PopupSuccessProps {
   restartGame: () => void;
@@ -49,7 +49,7 @@ function PopupSuccess({
           סיכום המשחק
         </Heading>
         <Text mb={5} color={"#176B87"}>
-          עשית {tries} ניסיונות, בתוך{" "}
+          עשית {tries} ניסיונות תוך{" "}
           {`${Math.floor(seconds / 60)}`.padStart(2, "0")}:
           {`${seconds % 60}`.padStart(2, "0")} דקות.
         </Text>

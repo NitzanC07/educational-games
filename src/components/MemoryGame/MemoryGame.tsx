@@ -4,7 +4,6 @@ import cards from "./data/memory-game.json";
 import ImageCard from "./ImageCard/ImageCard";
 import PopupImages from "./PopupImages/PopupImages";
 import PopupSuccess from "./PopupSuccess/PopupSuccess";
-import { log } from "console";
 
 function MemoryGame() {
   const [shuffledCards, setShuffledCards] = useState(cards);
@@ -170,7 +169,7 @@ function MemoryGame() {
         <PopupImages
           continuePlay={continuePlay}
           content={"כל הכבוד מצאת צמד קלפים תואמים!"}
-          buttonText={score !== 6 ? "להמשיך לשחק": "סיום משחק"}
+          buttonText={score !== 6 ? "להמשיך לשחק" : "סיום משחק"}
           imageItems={bothCardsMatch}
         />
       )}

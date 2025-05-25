@@ -33,6 +33,24 @@ function Header() {
             </Menu.Positioner>
           </Portal>
         </Menu.Root>
+
+        <Menu.Root>
+          <Menu.Trigger asChild>
+            <ChakraLink color={"#EEF5FF"} _hover={{ color: "#B4D4FF" }}>
+              כלים
+            </ChakraLink>
+          </Menu.Trigger>
+          <Portal>
+            <Menu.Positioner>
+              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"} width={200}>
+                <Menu.Item value="memory-game" fontSize={"3xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
+                  <Link to="/timer">טיימר</Link>
+                </Menu.Item>
+              </Menu.Content>
+            </Menu.Positioner>
+          </Portal>
+        </Menu.Root>
+        
       </Flex>
       <Text color={"#B4D4FF"}>ניצן כהן</Text>
     </header>
