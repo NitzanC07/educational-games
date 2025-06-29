@@ -25,6 +25,8 @@ function ImageCard({
     <Card.Root
       key={selectedCardId}
       width={["100px", "165px"]}
+      minWidth={["100px", "165px"]}
+      minHeight={["100px", "165px"]}
       overflow={"hidden"}
       cursor={"pointer"}
       border={"4px solid #176B87"}

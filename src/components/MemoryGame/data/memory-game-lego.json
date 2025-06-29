@@ -1,0 +1,110 @@
+[
+  {
+    "id": 101,
+    "cardName": "Elephant in Africa",
+    "cardIdMatch": 102,
+    "imgUrl": "/images/memory-game-lego/elephant-unsplash.jpg",
+    "description": "פיל אפריקאי שותה מים תוך כדי הליכה בשלולית רדודה. צלם: Chris Linnett, מתוך unsplash.com.",
+    "imageType": "unsplash.com",
+    "isVisible": true
+  },
+  {
+    "id": 102,
+    "cardName": "Elephant Lego",
+    "cardIdMatch": 101,
+    "imgUrl": "/images/memory-game-lego/elephant-lego.jpg",
+    "description": "דגם של פיל מלגו שהרכיב אורי.",
+    "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 103,
+    "cardName": "Apple",
+    "cardIdMatch": 104,
+    "imgUrl": "/images/memory-game-lego/apple-lego.jpg",
+    "description": "דגם של תפוח שאורי בנה מלגו.",
+    "imageType": "lego",
+    "isVisible": true
+  },
+  {
+    "id": 104,
+    "cardName": "Apple",
+    "cardIdMatch": 103,
+    "imgUrl": "/images/memory-game-lego/apple-unsplash.jpg",
+    "description": "צילום של תפוח. צלם: Ray Shrewberry, מתוך unsplash.com.",
+    "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 105,
+    "cardName": "Lego Airplane",
+    "cardIdMatch": 106,
+    "imgUrl": "/images/memory-game-lego/airplane-lego.jpg",
+    "description": "דגם של מטוס שאורי הרכיב מלגו.",
+    "imageType": "lego",
+    "isVisible": true
+  },
+  {
+    "id": 106,
+    "cardName": "Airplane",
+    "cardIdMatch": 105,
+    "imgUrl": "/images/memory-game-lego/airplane-unsplash.jpg",
+    "description": "מטוס טס בשמיים. צילום: Nick Morales, מתוך unsplash.com.",
+    "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 107,
+    "cardName": "Lego Boat",
+    "cardIdMatch": 108,
+    "imgUrl": "/images/memory-game-lego/boat-lego.jpg",
+    "description": "דגם של סירה שאורי הרכיב מלגו.",
+    "imageType": "lego",
+    "isVisible": true
+  },
+  {
+    "id": 108,
+    "cardName": "Boat",
+    "cardIdMatch": 107,
+    "imgUrl": "/images/memory-game-lego/boat-unsplash.jpg",
+    "description": "סירה שטה באגם. צילום: Martyna Lucia, מתוך unsplash.com.",
+    "imageType": "unsplash.com",
+    "isVisible": true
+  },
+  {
+    "id": 109,
+    "cardName": "Lego Car",
+    "cardIdMatch": 110,
+    "imgUrl": "/images/memory-game-lego/car-lego.jpg",
+    "description": "דגם של מכונית שאורי הרכיב מלגו.",
+    "imageType": "lego",
+    "isVisible": true
+  },
+  {
+    "id": 110,
+    "cardName": "Car",
+    "cardIdMatch": 109,
+    "imgUrl": "/images/memory-game-lego/car-unsplash.jpg",
+    "description": "מכונית איטלקית אדומה. צילום: Andrea Ranalletta, מתוך unsplash.com.",
+    "imageType": "unsplash.com",
+    "isVisible": true
+  },
+  {
+    "id": 111,
+    "cardName": "Lego castle",
+    "cardIdMatch": 112,
+    "imgUrl": "/images/memory-game-lego/castle-lego.jpg",
+    "description": "דגם של טירה שאורי בנה מלגו.",
+    "imageType": "lego",
+    "isVisible": true
+  },
+  {
+    "id": 112,
+    "cardName": "Castle",
+    "cardIdMatch": 111,
+    "imgUrl": "/images/memory-game-lego/castle-unsplash.jpg",
+    "description": "טירה בבלגיה. צילום: Alana Harris, מתוך unsplash.com.",
+    "imageType": "Lego",
+    "isVisible": true
+  }
+]

@@ -1,6 +1,6 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import cards from "./data/memory-game.json";
+import cards from "./data/memory-game-lego.json";
 import ImageCard from "./ImageCard/ImageCard";
 import PopupImages from "./PopupImages/PopupImages";
 import PopupSuccess from "./PopupSuccess/PopupSuccess";
@@ -86,7 +86,7 @@ function MemoryGame() {
           }
         } else {
           // Selected the second card.
-          if (i === selectedCardId) {
+          if (i === selectedCardId) {            
             setTimeout(() => {
               checkIsMatch(i);
               setTries(tries + 1);
@@ -103,9 +103,11 @@ function MemoryGame() {
   };
 
   const checkIsMatch = (secondCard: number) => {
+    console.log(shuffledCards[firstCard].id, shuffledCards[secondCard].cardIdMatch);
+    
     if (
       // Check if the cards match.
-      shuffledCards[firstCard].cardName === shuffledCards[secondCard].cardName
+      shuffledCards[firstCard].id === shuffledCards[secondCard].cardIdMatch
     ) {
       // If yes, there is a good match.
       setScore(score + 1);
