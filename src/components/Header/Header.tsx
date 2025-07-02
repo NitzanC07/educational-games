@@ -25,9 +25,12 @@ function Header() {
           </Menu.Trigger>
           <Portal>
             <Menu.Positioner>
-              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"} width={200}>
+              <Menu.Content dir="rtl" bgColor={"#B4D4FFdd"}>
                 <Menu.Item value="memory-game" fontSize={"3xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
-                  <Link to="/memory-game">משחק זכרון</Link>
+                  <Link to="/memory-game-trees">משחק זכרון עצים</Link>
+                </Menu.Item>
+                <Menu.Item value="memory-game-lego" fontSize={"3xl"} my={2} py={3} transition={"all 0.5s ease-in-out"}>
+                  <Link to="/memory-game-lego">משחק זכרון לגו</Link>
                 </Menu.Item>
               </Menu.Content>
             </Menu.Positioner>

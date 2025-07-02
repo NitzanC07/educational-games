@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import MainPage from "./components/MainPage/MainPage";
 import { Container, LocaleProvider } from "@chakra-ui/react";
 import Timer from "./components/Timer/Timer";
+import cardsLego from "./data/memory-game-lego.json";
+import cardsTrees from "./data/memory-game-trees.json";
 
 function App() {
   const { App, Main } = styles;
@@ -22,7 +24,7 @@ function App() {
                 textAlign={"right"}
                 minW={"100%"}
                 height={"100vh"}
-                mt={2}                
+                mt={2}
                 pt={0}
                 px={0}
                 mx={0}
@@ -30,7 +32,8 @@ function App() {
               >
                 <Routes>
                   <Route path="/" element={<MainPage />} />
-                  <Route path="/memory-game" element={<MemoryGame />} />
+                  <Route path="/memory-game-trees" element={<MemoryGame subject="עצים" cards={cardsTrees} />} />
+                  <Route path="/memory-game-lego" element={<MemoryGame subject="לגו" cards={cardsLego} />} />
                   <Route path="/timer" element={<Timer />} />
                 </Routes>
               </Container>

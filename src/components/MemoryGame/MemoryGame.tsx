@@ -1,11 +1,25 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-import cards from "./data/memory-game-lego.json";
+// import cards from "./data/memory-game-trees.json";
 import ImageCard from "./ImageCard/ImageCard";
 import PopupImages from "./PopupImages/PopupImages";
 import PopupSuccess from "./PopupSuccess/PopupSuccess";
 
-function MemoryGame() {
+interface MemoryGameProps {
+  subject: string;
+  cards: {
+    id: number;
+    imgUrl: string;
+    cardName: string;
+    cardIdMatch: number;
+    description: string;
+    isVisible: boolean;
+    imageType: string;
+  }[];
+}
+
+function MemoryGame({subject, cards}: MemoryGameProps) {  
+
   const [shuffledCards, setShuffledCards] = useState(cards);
   const [isShowCard, setIsShowCard] = useState<boolean[]>(
     Array(cards.length).fill(false)
@@ -86,7 +100,7 @@ function MemoryGame() {
           }
         } else {
           // Selected the second card.
-          if (i === selectedCardId) {            
+          if (i === selectedCardId) {
             setTimeout(() => {
               checkIsMatch(i);
               setTries(tries + 1);
@@ -103,8 +117,11 @@ function MemoryGame() {
   };
 
   const checkIsMatch = (secondCard: number) => {
-    console.log(shuffledCards[firstCard].id, shuffledCards[secondCard].cardIdMatch);
-    
+    console.log(
+      shuffledCards[firstCard].id,
+      shuffledCards[secondCard].cardIdMatch
+    );
+
     if (
       // Check if the cards match.
       shuffledCards[firstCard].id === shuffledCards[secondCard].cardIdMatch
@@ -141,12 +158,12 @@ function MemoryGame() {
 
   return (
     <section>
-      <Heading>משחק זכרון בנושא עצים</Heading>
-      <Text>
+      <Heading>משחק זכרון בנושא {subject}</Heading>
+      {/* <Text>
         נסיונות: {tries} | פספוסים: {tries - score} | התאמות: {score} | זמן:{" "}
         {`${Math.floor(seconds / 60)}`.padStart(2, "0")}:
         {`${seconds % 60}`.padStart(2, "0")}
-      </Text>
+      </Text> */}
       <Flex
         flexWrap={"wrap"}
         justifyContent={"center"}
