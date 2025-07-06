@@ -62,7 +62,7 @@ function MemoryGame({subject, cards}: MemoryGameProps) {
     const allCards = [...cards];
 
     // Loop until we have 6 couples
-    while (couples.length < 12) {
+    while ((couples.length < 12) && (allCards.length > 1)) {
       const randomIndex1 = Math.floor(Math.random() * allCards.length);
       const card1 = allCards[randomIndex1];
       const card2 = allCards.find((card) => card.id === card1.cardIdMatch);
@@ -188,7 +188,7 @@ function MemoryGame({subject, cards}: MemoryGameProps) {
         <PopupImages
           continuePlay={continuePlay}
           content={"כל הכבוד מצאת צמד קלפים תואמים!"}
-          buttonText={score !== 6 ? "להמשיך לשחק" : "סיום משחק"}
+          buttonText={score !== shuffledCards.length / 2 ? "להמשיך לשחק" : "סיום משחק"}
           imageItems={bothCardsMatch}
         />
       )}
