@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 // import cards from "./data/memory-game-trees.json";
 import ImageCard from "./ImageCard/ImageCard";

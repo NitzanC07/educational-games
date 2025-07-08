@@ -4,7 +4,7 @@
     "cardName": "Castle Lego",
     "cardIdMatch": 101,
     "imgUrl": "/images/memory-game-lego/castle-lego.jpg",
-    "description": "דגם של טירה שאורי בנה מלגו.",
+    "description": "טירה עתיקה בקצה הר עומדת נשגבת איתנה, מבוצרת שומרת אוצר. דגלים על צריחים מתנפנפים ברוח שורקת.",
     "imageType": "lego",
     "isVisible": true
   },
@@ -13,7 +13,7 @@
     "cardName": "Castle AI",
     "cardIdMatch": 100,
     "imgUrl": "/images/memory-game-lego/castle-ai.jpg",
-    "description": "טירה עתיקה בקצה הר עומדת נשגבת איתנה, מבוצרת שומרת אוצר. דגלים על צריחים מתנפנפים ברוח שורקת. (AI)",
+    "description": "תמונה שנוצרה בבינה מלאכותית באמצעות הפרומפט של תמונת הלגו. (AI)",
     "imageType": "Lego",
     "isVisible": true
   },
@@ -22,7 +22,7 @@
     "cardName": "House Lego",
     "cardIdMatch": 103,
     "imgUrl": "/images/memory-game-lego/house-lego.jpg",
-    "description": "דגם של טירה שאורי בנה מלגו.",
+    "description": "בית קטן עם קירות צהובים, רעפים על הגג בצבע סגול, דלת מעץ וחלון שרואים דרכו את החיים היפים הפשוטים בכל תפארת הדר.",
     "imageType": "lego",
     "isVisible": true
   },
@@ -31,7 +31,25 @@
     "cardName": "House AI",
     "cardIdMatch": 102,
     "imgUrl": "/images/memory-game-lego/house-ai.jpg",
-    "description": "טירה עתיקה בקצה הר עומדת נשגבת איתנה, מבוצרת שומרת אוצר. דגלים על צריחים מתנפנפים ברוח שורקת. (AI)",
+    "description": "תמונה שנוצרה בבינה מלאכותית באמצעות הפרומפט של תמונת הלגו. (AI)",
+    "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 104,
+    "cardName": "Car Lego",
+    "cardIdMatch": 105,
+    "imgUrl": "/images/memory-game-lego/car-lego.jpg",
+    "description": "נוסעת רחוק אל אופק רחב, מגלה נופים בכבישים ארוכים.",
+    "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 105,
+    "cardName": "Car AI",
+    "cardIdMatch": 104,
+    "imgUrl": "/images/memory-game-lego/car-ai.png",
+    "description": "מכונית קטנה אדומה עם ארבעה גלגלים וחלונות שקופים. סגנון מכונית אמריקאית משנת 1970. (AI)",
     "imageType": "Lego",
     "isVisible": true
   }
