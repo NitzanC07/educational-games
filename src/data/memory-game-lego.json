@@ -5,7 +5,7 @@
     "cardIdMatch": 101,
     "imgUrl": "/images/memory-game-lego/castle-lego.jpg",
     "description": "טירה עתיקה בקצה הר עומדת נשגבת איתנה, מבוצרת שומרת אוצר. דגלים על צריחים מתנפנפים ברוח שורקת.",
-    "imageType": "lego",
+    "imageType": "Lego",
     "isVisible": true
   },
   {
@@ -14,7 +14,7 @@
     "cardIdMatch": 100,
     "imgUrl": "/images/memory-game-lego/castle-ai.jpg",
     "description": "תמונה שנוצרה בבינה מלאכותית באמצעות הפרומפט של תמונת הלגו. (AI)",
-    "imageType": "Lego",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -23,7 +23,7 @@
     "cardIdMatch": 103,
     "imgUrl": "/images/memory-game-lego/house-lego.jpg",
     "description": "בית קטן עם קירות צהובים, רעפים על הגג בצבע סגול, דלת מעץ וחלון שרואים דרכו את החיים היפים הפשוטים בכל תפארת הדר.",
-    "imageType": "lego",
+    "imageType": "Lego",
     "isVisible": true
   },
   {
@@ -32,7 +32,7 @@
     "cardIdMatch": 102,
     "imgUrl": "/images/memory-game-lego/house-ai.jpg",
     "description": "תמונה שנוצרה בבינה מלאכותית באמצעות הפרומפט של תמונת הלגו. (AI)",
-    "imageType": "Lego",
+    "imageType": "AI",
     "isVisible": true
   },
   {
@@ -50,7 +50,25 @@
     "cardIdMatch": 104,
     "imgUrl": "/images/memory-game-lego/car-ai.png",
     "description": "מכונית קטנה אדומה עם ארבעה גלגלים וחלונות שקופים. סגנון מכונית אמריקאית משנת 1970. (AI)",
+    "imageType": "AI",
+    "isVisible": true
+  },
+  {
+    "id": 106,
+    "cardName": "Fish Lego",
+    "cardIdMatch": 107,
+    "imgUrl": "/images/memory-game-lego/fish-lego.jpg",
+    "description": "שוחה במצולות במעמקי האוקיינוס, שותק עם סוד לא מספר לאף אחד. זה דג נחמד רוצה לספר סיפורי מצולות.",
     "imageType": "Lego",
+    "isVisible": true
+  },
+  {
+    "id": 107,
+    "cardName": "Fish AI",
+    "cardIdMatch": 106,
+    "imgUrl": "/images/memory-game-lego/fish-ai.png",
+    "description": "דג זהב שוחה באקווריום קטן, תמונה בסגנון ציור עפרונות. (AI)",
+    "imageType": "AI",
     "isVisible": true
   }
 ]
